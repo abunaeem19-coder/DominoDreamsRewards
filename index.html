@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domino Dreams Free Coins Daily - Official Generator 2026</title>
+    <meta name="description" content="Get free Domino Dreams coins daily. Enter your Game ID and receive coins instantly. Limited daily quota available.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --primary: #e53935;
+            --primary-dark: #c62828;
+            --gold: #ffd700;
+            --gold-light: #ffeb3b;
+            --dark: #1a1a2e;
+            --light: #f5f5f5;
+            --success: #4caf50;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: #fff;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Floating Coins Animation */
+        .coins-bg {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .coin {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background: radial-gradient(circle at 30% 30%, #ffd700, #ff8c00);
+            border-radius: 50%;
+            border: 2px solid #ffeb3b;
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+            animation: float 15s infinite linear;
+            opacity: 0.3;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+            10% { opacity: 0.3; }
+            90% { opacity: 0.3; }
+            100% { transform: translateY(-100vh) rotate(720deg); opacity: 0; }
+        }
+
+        /* Header */
+        .header {
+            background: rgba(0,0,0,0.3);
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid var(--gold);
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            background: linear-gradient(to right, var(--gold), #fff, var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            margin-left: 10px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        /* Ad Banner Top */
+        .ad-banner-top {
+            width: 100%;
+            max-width: 728px;
+            height: 90px;
+            margin: 20px auto;
+            background: rgba(255,255,255,0.1);
+            border: 1px dashed var(--gold);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold);
+            font-size: 0.9rem;
+            border-radius: 8px;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Stats Bar */
+        .stats-bar {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin: 30px 0;
+        }
+
+        .stat-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,215,0,0.3);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            transform: translateY(0);
+            transition: transform 0.3s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--gold);
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--gold);
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: #aaa;
+        }
+
+        /* Urgency Banner */
+        .urgency-banner {
+            background: linear-gradient(90deg, var(--primary), #ff6b6b);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 20px 0;
+            border-left: 5px solid var(--gold);
+            animation: glow 3s infinite alternate;
+        }
+
+        @keyframes glow {
+            from { box-shadow: 0 0 10px rgba(229, 57, 53, 0.5); }
+            to { box-shadow: 0 0 20px rgba(229, 57, 53, 0.8); }
+        }
+
+        .timer {
+            font-size: 1.5rem;
+            font-family: monospace;
+            font-weight: bold;
+            color: #fff;
+            margin-top: 10px;
+        }
+
+        /* Generator Box */
+        .generator-box {
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(20px);
+            border: 2px solid rgba(255,215,0,0.4);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 30px 0;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .generator-box::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,215,0,0.1) 0%, transparent 70%);
+            animation: rotate 20s linear infinite;
+            pointer-events: none;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .form-title {
+            text-align: center;
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .input-group {
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--gold-light);
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .input-group input,
+        .input-group select {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid rgba(255,215,0,0.3);
+            background: rgba(0,0,0,0.3);
+            color: #fff;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+
+        .input-group input:focus,
+        .input-group select:focus {
+            outline: none;
+            border-color: var(--gold);
+            box-shadow: 0 0 15px rgba(255,215,0,0.3);
+        }
+
+        .input-icon {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--gold);
+            font-size: 1.2rem;
+        }
+
+        .platform-select {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .platform-option {
+            background: rgba(255,255,255,0.1);
+            border: 2px solid transparent;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .platform-option.active {
+            border-color: var(--gold);
+            background: rgba(255,215,0,0.2);
+        }
+
+        .platform-option:hover {
+            border-color: rgba(255,215,0,0.5);
+        }
+
+        /* Generate Button */
+        .generate-btn {
+            width: 100%;
+            padding: 20px;
+            background: linear-gradient(45deg, var(--primary), #ff6b6b);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s;
+            box-shadow: 0 10px 30px rgba(229, 57, 53, 0.4);
+        }
+
+        .generate-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 40px rgba(229, 57, 53, 0.6);
+        }
+
+        .generate-btn::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.3), transparent);
+            transform: rotate(45deg);
+            transition: all 0.5s;
+        }
+
+        .generate-btn:hover::after {
+            left: 100%;
+        }
+
+        .generate-btn:disabled {
+            background: #666;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        /* Processing Animation */
+        .processing {
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .processing.active {
+            display: block;
+        }
+
+        .spinner {
+            width: 60px;
+            height: 60px;
+            border: 4px solid rgba(255,215,0,0.3);
+            border-top-color: var(--gold);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 10px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 5px;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--gold), #ff8c00);
+            width: 0%;
+            transition: width 0.3s;
+            border-radius: 5px;
+        }
+
+        /* Recent Activity */
+        .activity-feed {
+            background: rgba(0,0,0,0.3);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 30px 0;
+            border: 1px solid rgba(255,215,0,0.2);
+        }
+
+        .activity-title {
+            color: var(--gold);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .live-dot {
+            width: 8px;
+            height: 8px;
+            background: #4caf50;
+            border-radius: 50%;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+
+        .activity-item {
+            padding: 10px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+            display: flex;
+            justify-content: space-between;
+            animation: slideIn 0.5s ease-out;
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        .activity-user {
+            color: var(--gold-light);
+        }
+
+        .activity-amount {
+            color: #4caf50;
+            font-weight: bold;
+        }
+
+        /* Ad Section Middle */
+        .ad-section {
+            margin: 30px 0;
+            text-align: center;
+            padding: 20px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 10px;
+            border: 1px dashed rgba(255,215,0,0.3);
+        }
+
+        /* Features */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .feature-card {
+            background: rgba(255,255,255,0.05);
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 4px solid var(--gold);
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateX(10px);
+            background: rgba(255,255,255,0.1);
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .feature-title {
+            color: var(--gold);
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            margin: 40px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 1.8rem;
+            color: var(--gold);
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .testimonial-card {
+            background: rgba(255,255,255,0.08);
+            padding: 25px;
+            border-radius: 15px;
+            position: relative;
+            border: 1px solid rgba(255,215,0,0.2);
+        }
+
+        .testimonial-card::before {
+            content: '"';
+            font-size: 4rem;
+            color: var(--gold);
+            opacity: 0.3;
+            position: absolute;
+            top: -10px;
+            left: 10px;
+        }
+
+        .stars {
+            color: var(--gold);
+            margin-bottom: 10px;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .testimonial-author {
+            color: var(--gold-light);
+            font-weight: bold;
+        }
+
+        /* Sticky Bottom Ad */
+        .sticky-ad {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,0.95);
+            padding: 10px;
+            text-align: center;
+            border-top: 2px solid var(--gold);
+            z-index: 999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .ad-placeholder {
+            width: 320px;
+            height: 50px;
+            background: rgba(255,255,255,0.1);
+            border: 1px dashed var(--gold);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold);
+            font-size: 0.8rem;
+        }
+
+        .close-ad {
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(0,0,0,0.5);
+            margin-top: 50px;
+            border-top: 1px solid rgba(255,215,0,0.2);
+            margin-bottom: 80px;
+        }
+
+        .disclaimer {
+            font-size: 0.85rem;
+            color: #888;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .trust-badges {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .trust-badge {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: #4caf50;
+            font-size: 0.9rem;
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.9);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .modal-content {
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            border: 2px solid var(--gold);
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            position: relative;
+            animation: modalPop 0.3s ease-out;
+        }
+
+        @keyframes modalPop {
+            from { transform: scale(0.8); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        .modal-icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+
+        .modal-title {
+            color: var(--gold);
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .modal-text {
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        .modal-btn {
+            background: var(--gold);
+            color: #000;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: transform 0.3s;
+        }
+
+        .modal-btn:hover {
+            transform: scale(1.05);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .stats-bar {
+                grid-template-columns: 1fr;
+            }
+            
+            .platform-select {
+                grid-template-columns: 1fr;
+            }
+            
+            .generator-box {
+                padding: 20px;
+            }
+            
+            .logo {
+                font-size: 1.3rem;
+            }
+        }
+
+        /* Notification Toast */
+        .toast {
+            position: fixed;
+            top: 80px;
+            right: 20px;
+            background: rgba(76, 175, 80, 0.9);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+            transform: translateX(400px);
+            transition: transform 0.3s;
+            z-index: 1500;
+            backdrop-filter: blur(10px);
+        }
+
+        .toast.show {
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Background Animation -->
+    <div class="coins-bg" id="coinsBg"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            🎲 Domino Dreams
+            <span class="badge">OFFICIAL</span>
+        </div>
+    </header>
+
+    <!-- Top Ad Banner (Adsterra - 728x90) -->
+    <div class="ad-banner-top">
+        <!-- Replace with your Adsterra 728x90 code -->
+        <span>Advertisement Space (728x90)</span>
+    </div>
+
+    <div class="container">
+
+        <!-- Stats Bar -->
+        <div class="stats-bar">
+            <div class="stat-card">
+                <span class="stat-number" id="totalCoins">2,847,392</span>
+                <span class="stat-label">Coins Generated Today</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" id="onlineUsers">1,247</span>
+                <span class="stat-label">Players Online Now</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" id="spotsLeft">23</span>
+                <span class="stat-label">Daily Spots Remaining</span>
+            </div>
+        </div>
+
+        <!-- Urgency Banner -->
+        <div class="urgency-banner">
+            <div>⚠️ Limited Daily Quota - Server Reset In:</div>
+            <div class="timer" id="countdown">04:59:59</div>
+        </div>
+
+        <!-- Main Generator Box -->
+        <div class="generator-box">
+            <h2 class="form-title">🎁 Generate Free Coins</h2>
+            
+            <form id="coinForm">
+                <!-- Platform Selection -->
+                <div style="margin-bottom: 20px;">
+                    <label style="color: var(--gold-light); font-weight: 600; display: block; margin-bottom: 10px;">Select Platform</label>
+                    <div class="platform-select">
+                        <div class="platform-option active" onclick="selectPlatform('android', this)">
+                            <div style="font-size: 1.5rem;">🤖</div>
+                            <div>Android</div>
+                        </div>
+                        <div class="platform-option" onclick="selectPlatform('ios', this)">
+                            <div style="font-size: 1.5rem;">🍎</div>
+                            <div>iOS</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game ID Input -->
+                <div class="input-group">
+                    <label for="gameId">Domino Dreams Game ID</label>
+                    <input type="text" id="gameId" placeholder="Enter your Game ID (e.g., DD12345678)" required maxlength="12">
+                    <span class="input-icon">🎮</span>
+                    <small style="color: #888; display: block; margin-top: 5px; font-size: 0.8rem;">*Find this in your game profile settings</small>
+                </div>
+
+                <!-- Coin Amount Selection -->
+                <div class="input-group">
+                    <label for="coinAmount">Select Coin Amount</label>
+                    <select id="coinAmount" required>
+                        <option value="">Choose Amount...</option>
+                        <option value="1000">1,000 Coins</option>
+                        <option value="5000">5,000 Coins</option>
+                        <option value="10000" selected>10,000 Coins (Most Popular)</option>
+                        <option value="50000">50,000 Coins</option>
+                    </select>
+                    <span class="input-icon">🪙</span>
+                </div>
+
+                <!-- Security Check (Fake) -->
+                <div class="input-group">
+                    <label>Human Verification</label>
+                    <div style="display: flex; align-items: center; gap: 10px; background: rgba(0,0,0,0.3); padding: 15px; border-radius: 10px; border: 1px solid rgba(255,215,0,0.3);">
+                        <input type="checkbox" id="humanCheck" required style="width: 20px; height: 20px; cursor: pointer;">
+                        <label for="humanCheck" style="margin: 0; cursor: pointer; font-weight: normal;">I am not a robot</label>
+                        <span style="margin-left: auto; font-size: 0.8rem; color: var(--gold);">✓ Verified</span>
+                    </div>
+                </div>
+
+                <!-- Generate Button -->
+                <button type="submit" class="generate-btn" id="generateBtn">
+                    🚀 GENERATE COINS NOW
+                </button>
+            </form>
+
+            <!-- Processing Animation -->
+            <div class="processing" id="processing">
+                <div class="spinner"></div>
+                <div style="color: var(--gold); font-size: 1.2rem; margin-bottom: 10px;">Connecting to Domino Dreams servers...</div>
+                <div style="color: #888; font-size: 0.9rem; margin-bottom: 20px;" id="statusText">Validating Game ID...</div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressBar"></div>
+                </div>
+                <div style="font-size: 0.85rem; color: var(--gold-light);">Please do not close this window</div>
+            </div>
+        </div>
+
+        <!-- Middle Ad Section (Adsterra - 300x250 or 336x280) -->
+        <div class="ad-section">
+            <!-- Replace with your Adsterra 300x250 code -->
+            <div style="width: 300px; height: 250px; background: rgba(255,255,255,0.1); margin: 0 auto; display: flex; align-items: center; justify-content: center; border: 1px dashed var(--gold); color: var(--gold);">
+                Advertisement (300x250)
+            </div>
+        </div>
+
+        <!-- Recent Activity Feed -->
+        <div class="activity-feed">
+            <div class="activity-title">
+                <span class="live-dot"></span>
+                <span>Live Coin Generation</span>
+            </div>
+            <div id="activityList">
+                <!-- Populated by JS -->
+            </div>
+        </div>
+
+        <!-- Features -->
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <div class="feature-title">Instant Delivery</div>
+                <p>Coins delivered to your account within 5 minutes of verification.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔒</div>
+                <div class="feature-title">100% Secure</div>
+                <p>SSL encrypted connection. Your Game ID is never stored or shared.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💯</div>
+                <div class="feature-title">No Ban Risk</div>
+                <p>Using official API methods. Undetectable by game servers.</p>
+            </div>
+        </div>
+
+        <!-- Testimonials -->
+        <div class="testimonials">
+            <h3 class="section-title">Player Reviews</h3>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <div class="testimonial-text">Got my 10k coins in literally 3 minutes! Was skeptical at first but it actually works. Used it 3 times already this week.</div>
+                    <div class="testimonial-author">- Sarah M. | Android User</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <div class="testimonial-text">Finally a generator that doesn't ask for password! Just Game ID and boom, coins in my account. Love this!</div>
+                    <div class="testimonial-author">- Mike T. | iOS User</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <div class="testimonial-text">Saved me so much money. The daily limit is fair, keeps it working for everyone. 10/10 would recommend!</div>
+                    <div class="testimonial-author">- Jessica K. | Android User</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="trust-badges">
+                <div class="trust-badge">🔒 SSL Secured</div>
+                <div class="trust-badge">✅ Verified Tool</div>
+                <div class="trust-badge">⚡ 24/7 Support</div>
+            </div>
+            <div class="disclaimer">
+                <p>This is an independent fan-made tool and is not affiliated with or endorsed by Domino Dreams or its creators. 
+                Use at your own discretion. We do not store any personal game data. Coins are generated through promotional partnerships.</p>
+                <p style="margin-top: 15px;">© 2026 Domino Dreams Rewards. All rights reserved.</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Sticky Bottom Ad (Adsterra - 320x50 or 728x90) -->
+    <div class="sticky-ad">
+        <button class="close-ad" onclick="this.parentElement.style.display='none'">×</button>
+        <!-- Replace with your Adsterra 320x50 or 728x90 code -->
+        <div class="ad-placeholder">
+            Advertisement (320x50)
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <div class="modal-icon">🎉</div>
+            <h3 class="modal-title">Almost Done!</h3>
+            <p class="modal-text">
+                Your <strong id="modalAmount">10,000</strong> coins are queued for delivery to Game ID: <strong id="modalGameId">--</strong>.<br><br>
+                Due to high demand, please complete the human verification below to prioritize your order.
+            </p>
+            <a href="YOUR_ADSTERRA_SMARTLINK_HERE" class="modal-btn" id="verifyBtn">
+                VERIFY & GET COINS →
+            </a>
+            <p style="margin-top: 20px; font-size: 0.85rem; color: #888;">
+                <span id="queuePosition">Waiting in queue: 3 users ahead of you</span>
+            </p>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        ✅ Someone just claimed 10,000 coins!
+    </div>
+
+    <script>
+        // Configuration
+        let selectedPlatform = 'android';
+        const ADSTERRA_SMARTLINK = 'YOUR_ADSTERRA_SMARTLINK_HERE'; // Replace this
+        
+        // Initialize floating coins
+        function createCoins() {
+            const container = document.getElementById('coinsBg');
+            for(let i = 0; i < 20; i++) {
+                const coin = document.createElement('div');
+                coin.className = 'coin';
+                coin.style.left = Math.random() * 100 + '%';
+                coin.style.animationDelay = Math.random() * 15 + 's';
+                coin.style.animationDuration = (10 + Math.random() * 10) + 's';
+                container.appendChild(coin);
+            }
+        }
+        createCoins();
+
+        // Platform Selection
+        function selectPlatform(platform, element) {
+            selectedPlatform = platform;
+            document.querySelectorAll('.platform-option').forEach(el => el.classList.remove('active'));
+            element.classList.add('active');
+        }
+
+        // Countdown Timer
+        function updateTimer() {
+            const now = new Date();
+            const tomorrow = new Date(now);
+            tomorrow.setHours(24, 0, 0, 0);
+            const diff = tomorrow - now;
+            
+            const hours = Math.floor(diff / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            document.getElementById('countdown').textContent = 
+                `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+        }
+        setInterval(updateTimer, 1000);
+        updateTimer();
+
+        // Live Stats Updates
+        setInterval(() => {
+            // Update online users
+            const onlineEl = document.getElementById('onlineUsers');
+            const currentOnline = parseInt(onlineEl.textContent.replace(',', ''));
+            const change = Math.floor(Math.random() * 20) - 10;
+            onlineEl.textContent = (currentOnline + change).toLocaleString();
+
+            // Update coins
+            const coinsEl = document.getElementById('totalCoins');
+            const currentCoins = parseInt(coinsEl.textContent.replace(/,/g, ''));
+            coinsEl.textContent = (currentCoins + Math.floor(Math.random() * 50)).toLocaleString();
+
+            // Decrease spots occasionally
+            if(Math.random() > 0.7) {
+                const spotsEl = document.getElementById('spotsLeft');
+                let spots = parseInt(spotsEl.textContent);
+                if(spots > 1) spotsEl.textContent = spots - 1;
+            }
+        }, 3000);
+
+        // Activity Feed Generator
+        const names = ['Alex', 'Sam', 'Jordan', 'Casey', 'Riley', 'Avery', 'Quinn', 'Skyler', 'Dakota', 'Reese'];
+        const amounts = ['1,000', '5,000', '10,000', '10,000', '50,000'];
+        
+        function addActivity() {
+            const list = document.getElementById('activityList');
+            const name = names[Math.floor(Math.random() * names.length)];
+            const amount = amounts[Math.floor(Math.random() * amounts.length)];
+            const time = 'Just now';
+            
+            const item = document.createElement('div');
+            item.className = 'activity-item';
+            item.innerHTML = `
+                <span class="activity-user">${name}***</span>
+                <span style="color: #888;">Generated</span>
+                <span class="activity-amount">+${amount} Coins</span>
+            `;
+            
+            list.insertBefore(item, list.firstChild);
+            if(list.children.length > 5) list.removeChild(list.lastChild);
+
+            // Show toast occasionally
+            if(Math.random() > 0.6) {
+                const toast = document.getElementById('toast');
+                toast.textContent = `🎉 ${name} just claimed ${amount} coins!`;
+                toast.classList.add('show');
+                setTimeout(() => toast.classList.remove('show'), 3000);
+            }
+        }
+        
+        // Initial population
+        for(let i = 0; i < 5; i++) addActivity();
+        setInterval(addActivity, 5000);
+
+        // Form Handling
+        document.getElementById('coinForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const gameId = document.getElementById('gameId').value;
+            const amount = document.getElementById('coinAmount').value;
+            const btn = document.getElementById('generateBtn');
+            const processing = document.getElementById('processing');
+            const progressBar = document.getElementById('progressBar');
+            const statusText = document.getElementById('statusText');
+            
+            // Validation
+            if(!gameId || gameId.length < 6) {
+                alert('Please enter a valid Game ID (minimum 6 characters)');
+                return;
+            }
+            
+            if(!document.getElementById('humanCheck').checked) {
+                alert('Please verify you are human');
+                return;
+            }
+            
+            // Hide form, show processing
+            btn.style.display = 'none';
+            processing.classList.add('active');
+            
+            // Simulate processing steps
+            const steps = [
+                { text: 'Connecting to Domino Dreams servers...', progress: 20, delay: 1000 },
+                { text: 'Validating Game ID: ' + gameId + '...', progress: 40, delay: 1500 },
+                { text: 'Checking account status...', progress: 60, delay: 1200 },
+                { text: 'Allocating ' + amount + ' coins...', progress: 80, delay: 1500 },
+                { text: 'Finalizing transfer...', progress: 95, delay: 1000 }
+            ];
+            
+            for(let step of steps) {
+                await new Promise(r => setTimeout(r, step.delay));
+                statusText.textContent = step.text;
+                progressBar.style.width = step.progress + '%';
+            }
+            
+            // Show modal
+            document.getElementById('modalAmount').textContent = parseInt(amount).toLocaleString();
+            document.getElementById('modalGameId').textContent = gameId;
+            document.getElementById('successModal').style.display = 'flex';
+            
+            // Update verify button link
+            document.getElementById('verifyBtn').href = ADSTERRA_SMARTLINK;
+        });
+
+        // Close modal when clicking outside
+        document.getElementById('successModal').addEventListener('click', function(e) {
+            if(e.target === this) {
+                this.style.display = 'none';
+                // Reset form
+                document.getElementById('coinForm').reset();
+                document.getElementById('generateBtn').style.display = 'block';
+                document.getElementById('processing').classList.remove('active');
+                document.getElementById('progressBar').style.width = '0%';
+            }
+        });
+
+        // Queue position countdown in modal
+        setInterval(() => {
+            const queueEl = document.getElementById('queuePosition');
+            if(queueEl && document.getElementById('successModal').style.display === 'flex') {
+                const match = queueEl.textContent.match(/\d+/);
+                if(match) {
+                    let num = parseInt(match[0]);
+                    if(num > 0 && Math.random() > 0.5) {
+                        queueEl.textContent = `Waiting in queue: ${num - 1} user${num-1 !== 1 ? 's' : ''} ahead of you`;
+                    }
+                }
+            }
+        }, 2000);
+    </script>
+</body>
+</html>
