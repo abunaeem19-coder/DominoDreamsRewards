@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Domino Dreams Free Coins Daily - Official Generator 2026</title>
     <meta name="description" content="Get free Domino Dreams coins daily. Enter your Game ID and receive coins instantly. Limited daily quota available.">
+
+    <!-- Popunder Ad (Adsterra) -->
+    <script src="https://flaskledgeheadquarters.com/39/96/91/3996917ba1e72bfcdfe9632649c494da.js"></script>
+
     <style>
         * {
             margin: 0;
@@ -61,7 +65,7 @@
 
         /* Header */
         .header {
-            background: rgba(0,0,0,0.3);
+            background: rgba(0,0,0,0.6);
             backdrop-filter: blur(10px);
             border-bottom: 2px solid var(--gold);
             padding: 15px 20px;
@@ -83,13 +87,14 @@
 
         .badge {
             display: inline-block;
-            background: var(--primary);
-            color: white;
+            background: #000;
+            color: #fff;
             padding: 4px 12px;
             border-radius: 20px;
             font-size: 0.75rem;
             margin-left: 10px;
             animation: pulse 2s infinite;
+            border: 1px solid var(--gold);
         }
 
         @keyframes pulse {
@@ -430,7 +435,7 @@
             font-weight: bold;
         }
 
-        /* Ad Section Middle */
+        /* Middle Ad Section */
         .ad-section {
             margin: 30px 0;
             text-align: center;
@@ -718,7 +723,7 @@
     <!-- Top Ad Banner (Adsterra - 728x90) -->
     <div class="ad-banner-top">
         <!-- Replace with your Adsterra 728x90 code -->
-        <span>Top Ad Banner (Adsterra - 728x90) </span>
+        <span>Top Ad Banner (Adsterra - 728x90)</span>
     </div>
 
     <div class="container">
@@ -805,8 +810,7 @@
             <!-- Processing Animation -->
             <div class="processing" id="processing">
                 <div class="spinner"></div>
-                <div style="color: var(--gold); font-size: 1.2rem; margin-bottom: 10px;">Connecting to Domino Dreams servers...</div>
-                <div style="color: #888; font-size: 0.9rem; margin-bottom: 20px;" id="statusText">Validating Game ID...</div>
+                <div style="color: var(--gold); font-size: 1.2rem; margin-bottom: 10px;" id="statusText">Validating Game ID...</div>
                 <div class="progress-bar">
                     <div class="progress-fill" id="progressBar"></div>
                 </div>
@@ -814,12 +818,11 @@
             </div>
         </div>
 
-        <!-- Middle Ad Section (Adsterra - 300x250 or 336x280) -->
+        <!-- Middle Ad Section (Native Banner) -->
         <div class="ad-section">
-            <!-- Replace with your Adsterra 300x250 code -->
-            <div style="width: 300px; height: 250px; background: rgba(255,255,255,0.1); margin: 0 auto; display: flex; align-items: center; justify-content: center; border: 1px dashed var(--gold); color: var(--gold);">
-                Advertisement (300x250)
-            </div>
+            <!-- Native Banner Ad (Adsterra) -->
+            <script async="async" data-cfasync="false" src="https://flaskledgeheadquarters.com/03f27cadbcc8ac91f41a82e5b5432213/invoke.js"></script>
+            <div id="container-03f27cadbcc8ac91f41a82e5b5432213"></div>
         </div>
 
         <!-- Recent Activity Feed -->
@@ -922,6 +925,9 @@
         ✅ Someone just claimed 10,000 coins!
     </div>
 
+    <!-- Social Bar (Adsterra) -->
+    <script src="https://flaskledgeheadquarters.com/e8/c1/d0/e8c1d04d9806526822e1750720d10468.js"></script>
+
     <script>
         // Configuration
         let selectedPlatform = 'android';
@@ -967,18 +973,15 @@
 
         // Live Stats Updates
         setInterval(() => {
-            // Update online users
             const onlineEl = document.getElementById('onlineUsers');
-            const currentOnline = parseInt(onlineEl.textContent.replace(',', ''));
+            const currentOnline = parseInt(onlineEl.textContent.replace(/,/g, ''));
             const change = Math.floor(Math.random() * 20) - 10;
             onlineEl.textContent = (currentOnline + change).toLocaleString();
 
-            // Update coins
             const coinsEl = document.getElementById('totalCoins');
             const currentCoins = parseInt(coinsEl.textContent.replace(/,/g, ''));
             coinsEl.textContent = (currentCoins + Math.floor(Math.random() * 50)).toLocaleString();
 
-            // Decrease spots occasionally
             if(Math.random() > 0.7) {
                 const spotsEl = document.getElementById('spotsLeft');
                 let spots = parseInt(spotsEl.textContent);
@@ -994,7 +997,6 @@
             const list = document.getElementById('activityList');
             const name = names[Math.floor(Math.random() * names.length)];
             const amount = amounts[Math.floor(Math.random() * amounts.length)];
-            const time = 'Just now';
             
             const item = document.createElement('div');
             item.className = 'activity-item';
@@ -1007,7 +1009,6 @@
             list.insertBefore(item, list.firstChild);
             if(list.children.length > 5) list.removeChild(list.lastChild);
 
-            // Show toast occasionally
             if(Math.random() > 0.6) {
                 const toast = document.getElementById('toast');
                 toast.textContent = `🎉 ${name} just claimed ${amount} coins!`;
@@ -1016,7 +1017,6 @@
             }
         }
         
-        // Initial population
         for(let i = 0; i < 5; i++) addActivity();
         setInterval(addActivity, 5000);
 
@@ -1031,7 +1031,6 @@
             const progressBar = document.getElementById('progressBar');
             const statusText = document.getElementById('statusText');
             
-            // Validation
             if(!gameId || gameId.length < 6) {
                 alert('Please enter a valid Game ID (minimum 6 characters)');
                 return;
@@ -1042,11 +1041,9 @@
                 return;
             }
             
-            // Hide form, show processing
             btn.style.display = 'none';
             processing.classList.add('active');
             
-            // Simulate processing steps
             const steps = [
                 { text: 'Connecting to Domino Dreams servers...', progress: 20, delay: 1000 },
                 { text: 'Validating Game ID: ' + gameId + '...', progress: 40, delay: 1500 },
@@ -1061,20 +1058,16 @@
                 progressBar.style.width = step.progress + '%';
             }
             
-            // Show modal
             document.getElementById('modalAmount').textContent = parseInt(amount).toLocaleString();
             document.getElementById('modalGameId').textContent = gameId;
             document.getElementById('successModal').style.display = 'flex';
             
-            // Update verify button link
             document.getElementById('verifyBtn').href = ADSTERRA_SMARTLINK;
         });
 
-        // Close modal when clicking outside
         document.getElementById('successModal').addEventListener('click', function(e) {
             if(e.target === this) {
                 this.style.display = 'none';
-                // Reset form
                 document.getElementById('coinForm').reset();
                 document.getElementById('generateBtn').style.display = 'block';
                 document.getElementById('processing').classList.remove('active');
@@ -1082,7 +1075,6 @@
             }
         });
 
-        // Queue position countdown in modal
         setInterval(() => {
             const queueEl = document.getElementById('queuePosition');
             if(queueEl && document.getElementById('successModal').style.display === 'flex') {
